@@ -1,0 +1,55 @@
+import type { BookingRecord } from '@/state/bookingTypes'
+
+export const mockBookings: BookingRecord[] = [
+  {
+    id: 'BK-1021',
+    status: 'confirmed',
+    createdAt: '2025-12-04T08:30:00Z',
+    scheduledFor: '2025-12-05T10:30:00Z',
+    categoryId: 'ac',
+    subCategoryId: 'ac-servicing',
+    customer: { name: 'Ava Martin', mobile: '9876501234' },
+    address: {
+      house: 'Green Heights 5B',
+      street: 'Sector 21',
+      place: 'North Ridge',
+      district: 'Central',
+      pincode: '560001',
+    },
+    locationNote: 'Parking available near block B.',
+  },
+  {
+    id: 'BK-1022',
+    status: 'pending',
+    createdAt: '2025-12-04T09:15:00Z',
+    scheduledFor: '2025-12-06T14:00:00Z',
+    categoryId: 'plumbing',
+    subCategoryId: 'leak-fix',
+    customer: { name: 'Ravi Patel', mobile: '9988776655' },
+    address: {
+      house: 'Sunrise Villa',
+      street: 'Lake Road',
+      place: 'East Bay',
+      district: 'Harbor',
+      pincode: '400001',
+    },
+    locationNote: 'Call at gate for entry code.',
+  },
+  {
+    id: 'BK-1023',
+    status: 'in-progress',
+    createdAt: '2025-12-03T11:00:00Z',
+    scheduledFor: '2025-12-04T16:00:00Z',
+    categoryId: 'gadget-repair',
+    subCategoryId: 'laptop',
+    customer: { name: 'Lena Ortiz', mobile: '9123456780' },
+    address: {
+      house: '14B',
+      street: 'Maple Street',
+      place: 'Old Town',
+      district: 'Central',
+      pincode: '110001',
+    },
+    locationNote: 'Buzz 14B, 3rd floor.',
+  },
+]
