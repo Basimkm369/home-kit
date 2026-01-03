@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+@reference 'tailwindcss/utilities';
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased;
+  }
+}
